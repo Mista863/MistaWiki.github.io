@@ -1,0 +1,72 @@
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+  }
+  /* убираем отступы и поля, а также list-style для "ul", 
+ * и добавляем "position:relative" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    flex-direction:row-reverse;
+    }
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;
+    background-color:  #ffffff;
+    }
+
+/* стилизуем ссылки */
+nav a {
+    display:block;
+    padding:0 10px;
+    color:#000000;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+    background-color: #ffffff;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    float: left;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+nav ul ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
