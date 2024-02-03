@@ -282,9 +282,13 @@ body {
     -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
     transition: opacity .5s .7s, transform .5s .7s;
 }
-.nav > ul > li > ul > li:nth-child(8) {
+.nav > ul > li > ul > li:nth-child(0) {
     -webkit-transition: opacity .5s .8s, -webkit-transform .5s .8s;
     transition: opacity .5s .8s, transform .5s .8s;
+}
+.nav > ul > li > ul > li:nth-child(1) {
+    -webkit-transition: opacity .5s .8s, -webkit-transform .5s .9s;
+    transition: opacity .5s .9s, transform .5s .9s;
 }
  
  
@@ -459,4 +463,32 @@ body {
 
 .nav > ul > li > ul > li {
     list-style: none;
+}
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
