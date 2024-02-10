@@ -15,6 +15,35 @@
     }
     .maxcontent{ 
     margin-left: 100px;
+    margin-right: 100px;
+    padding-right: 100px;
+    }
+    @media (min-width: 600px) {
+    .bar{
+    width: 30px;
+    height: 10px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease; 
+    }
+    }
+    @media (max-width: 600px) {
+    .bar{
+    width: 90px;
+    height: 20px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease; 
+    }
+    }
+    .rfd {
+        display: flex;
     }
 </style>
 <body>
@@ -39,9 +68,10 @@
             </ul>
     </ul>
 </nav>
+<!-- <div class="maxcontent"> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TimKU5bAEDQ?si=-lEpvgI7YY_sqlOW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+<!-- </div> -->
 <div class="maxcontent">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TimKU5bAEDQ?si=-lEpvgI7YY_sqlOW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
 <div class="slider middle">
     <div class="slides">
        <input type="radio" name="r" id="r1" checked>
@@ -68,7 +98,9 @@
        <label for="r3" class="bar"></label>
        <label for="r4" class="bar"></label>
     </div>
- </div>
+</div>
+<!-- <h1 class="rfd">rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1> -->
+</div>
 <!-- <div class="sketchfab-embed-wrapper"> <iframe title="Ivy Pepper from Lackadaisy" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/01004f18de714e2aa9c613409fce2596/embed?autospin=1&autostart=1&preload=1&ui_hint=2"> </iframe> </div> -->
 </body>
 </html>
