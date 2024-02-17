@@ -540,4 +540,8 @@ body {
   #r4:checked ~ .s1 {
     margin-left: -75%;
   }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
   
