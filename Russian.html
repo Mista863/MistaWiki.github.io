@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автомобили</title>
-    <link rel="stylesheet" href="style2.css">
-
+    <title>Транспорт</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .generalcont{
+        margin-left: 130px;
+        margin-top: 30px; 
+        border: 3px solid grey;
+        border-radius: 3px;
+        padding-left: 2%;
+        padding-right: 1%;
+        width: 300px;
+        text-decoration: none;
+    }
+    .content {
+        display: flex;
+    }
+    .born {
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        margin-left: 40px
+    }
+</style>
 <body>
     <input type="checkbox" id="nav-toggle" hidden>
     <nav class="nav">
@@ -30,15 +50,14 @@
         </ul>
 </nav>
 <input class="born" type="button" onclick="history.back();" value="🠜Назад"/>
-<input type="radio" name="position" checked />
-<input type="radio" name="position" />
-<input type="radio" name="position" />
-<input type="radio" name="position" />
-<input type="radio" name="position" />
-<main id="carousel">
-  <div class="item"><img src="Lackadaisy_(panel).jpg" height="400px"></div>
-  <div class="item"><img src="15.jpg"  height="400px"></div>
-  <div class="item"><img src="16.jpg" alt=""  height="400px"></div>
-  <main>
+<div class="content">
+<div class="generalcont">
+    <a href="Kolobanga.html">
+        <img src="Kolobanga.jpg" height="" width="300">
+        <h1>Колобанга</h1>
+    </a>
+</div>
+</div> 
+    
 </body>
 </html>

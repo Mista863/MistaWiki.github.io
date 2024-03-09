@@ -564,4 +564,10 @@ body {
   input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
   }
+  .born {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 40px
+}
   
